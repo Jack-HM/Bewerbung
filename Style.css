@@ -1,0 +1,392 @@
+/* ...............................body............................... */
+body {
+  margin: 0%;
+  background: linear-gradient(
+    #757bc8,
+    #8187dc,
+    #8e94f2,
+    #9fa0ff,
+    #ada7ff,
+    #bbadff,
+    #cbb2fe,
+    #dab6fc,
+    #ddbdfc,
+    #e0c3fc
+  );
+}
+body * {
+  font-family: "Times New Roman", Times, serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* ...............................nav............................... */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  font-size: 1.3rem;
+  position: relative;
+  top: 50%;
+  transform: translatey(-50%);
+}
+nav {
+  display: flex;
+  background-color: #a9a9a9;
+  height: 3rem;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  position: fixed;
+  right: 15%;
+  z-index: 1;
+}
+a {
+  text-decoration: none;
+  padding-left: 15px;
+  color: black;
+  margin-left: 100px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+i {
+  padding-right: 5px;
+  color: #3e92cc;
+  filter: saturate(200%);
+}
+nav a:hover {
+  background-color: #87cefa;
+  border: 1px solid lightblue;
+  border: 1px blue solid;
+  border-radius: 5px;
+}
+a:active {
+  color: red;
+}
+/* ...............................anschreiben............................... */
+.anschreiben {
+  background-color: #d3d3d3;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.anschreiben p {
+  font-size: 1.2rem;
+  margin: 0%;
+  line-height: 35px;
+}
+.flex-ff {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 70%;
+  background-color: #d3d3d3;
+  padding: 0 10px 0 10px;
+  font-size: 1.2rem;
+}
+.datum {
+  float: right;
+  margin-top: 50px;
+  font-style: italic;
+}
+.bewerbung {
+  font-weight: 800;
+  clear: both;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.adress {
+  float: left;
+  font-style: italic;
+  margin-top: 60px;
+}
+.bewerbungsdatum {
+  font-weight: 800;
+  margin-right: 10px;
+  margin-top: 38px;
+}
+/* ...............................main............................... */
+/* .........grid......... */
+.grid {
+  display: grid;
+  margin: 0 auto;
+  width: 70%;
+  background-color: white;
+  font-size: 1.2rem;
+  grid-template-columns: repeat(6, 1fr);
+  /* border: black 1px solid; */
+  grid-template-areas:
+    "f f f f f f"
+    "k k k sw sw sw"
+    "kt kt kt swt swt swt"
+    "s s s sk sk sk"
+    "c c c h h h";
+}
+.item-1 {
+  grid-area: f;
+  text-align: center;
+  border-bottom: 1px black solid;
+}
+.item-2 {
+  grid-area: k;
+  text-align: center;
+}
+.item-3 {
+  grid-area: kt;
+  text-align: center;
+}
+.item-4 {
+  grid-area: sw;
+  text-align: center;
+  border-left: 1px solid black;
+}
+.item-5 {
+  grid-area: swt;
+  text-align: center;
+  border-left: 1px solid black;
+}
+.item-6 {
+  grid-area: s;
+  justify-content: center;
+}
+.item-7 {
+  grid-area: sk;
+  text-align: center;
+  border-left: 1px solid black;
+}
+.item-8 {
+  grid-area: c;
+  justify-content: center;
+}
+.item-9 {
+  grid-area: h;
+  border-left: 1px solid black;
+}
+
+/* .........grid......... */
+/* .........Item-grid sprache...... */
+.lang-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 300px;
+  grid-template-areas:
+    "one one"
+    "two three";
+  grid-auto-flow: column;
+}
+.lang-head {
+  grid-area: one;
+  justify-self: center;
+}
+.grid-fl {
+  grid-area: two;
+  justify-self: center;
+}
+.grid-fix {
+  grid-area: three;
+  justify-self: start;
+}
+.box-mother > div {
+  border-radius: 10px;
+}
+.box {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+.box-mother {
+  margin-top: 19.2px;
+}
+.bmd > .bc {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.bme > .bc {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.bms > .bc {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.bmp > div {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+/* .........Item-grid Charakter...... */
+.flex-third {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 300px;
+  grid-template-areas:
+    "onee onee"
+    "twoo threee";
+}
+.box-two {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+}
+.char-head {
+  grid-area: onee;
+  justify-self: center;
+}
+.item-82 {
+  grid-area: twoo;
+  justify-self: center;
+}
+.box-mother-two {
+  grid-area: threee;
+  justify-self: start;
+}
+.box-mother-two > div {
+  margin-top: 19.2px;
+}
+.t-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.k-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.z-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.l-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.o-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.g-box > .sb {
+  background-color: #3e92cc;
+  filter: saturate(200%);
+}
+.box-two {
+  border-radius: 10px;
+}
+/* ......... End Item-grid...... */
+img {
+  width: 30%;
+  border-radius: 0 100px 0 100px;
+}
+/* ................Flex hobbies............ */
+.flex-hob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-9 h1 {
+  text-align: center;
+}
+/* ...............................main A............................... */
+.zeugniss {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #50514f;
+  height: 150px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.zeugniss a {
+  display: inline-block;
+}
+.zeugniss a:hover {
+  background: red;
+  border-radius: 10px;
+}
+.zeugniss p {
+  display: inline-block;
+  padding-left: 5px;
+}
+.zeugniss a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 0px;
+  text-decoration: underline white 2px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 5px;
+}
+.zeugniss div {
+  background-color: #264653;
+  border: solid #264653 1px;
+  border-radius: 20px;
+  display: inline-block;
+  position: relative;
+  top: 30%;
+  text-align: center;
+  color: white;
+  margin: auto 10px auto 10px;
+}
+/* ...............................main B............................... */
+.bfooter {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #f25f5c;
+  font-size: 1.1rem;
+}
+.bfooter * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.hfour {
+  margin: 0 15px 20px 10px;
+  padding-top: 10px;
+  font-size: 30px;
+}
+.hthree {
+  margin: 5px auto auto 30px;
+}
+.hfive {
+  margin-left: 30px;
+}
+.lpb {
+  padding-bottom: 10px;
+  margin-bottom: 0%;
+  padding-left: 0%;
+  margin-left: 0;
+}
+.bfooter ul {
+  margin-bottom: 0%;
+}
+li {
+  padding: 0%;
+  margin: 0%;
+}
+.pmargin p {
+  margin: 0;
+}
+/* ...............................footer............................... */
+.footerr {
+  display: flex;
+  margin: 0 auto;
+  width: 70%;
+  height: 70px;
+  align-items: center;
+  background-color: #ffe066;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+.footerr p {
+  margin: 15px;
+}
